@@ -1,0 +1,300 @@
+    *{
+        margin:0;
+        box-sizing: border-box;
+    }
+    .center{
+        text-align: left;
+    }
+    .container{
+        max-width: 1024px;
+        text-align: left;
+        margin:auto;
+    }
+    .header{
+        background: linear-gradient(rgba(100, 77, 0, 0.5),rgba(100, 77, 0, 0.5)),url(Header-bg.jpg);
+        background-size: cover;
+        background-position: center;
+    }
+    .header-main{
+        padding: 25px 0 10px 0;
+    }
+    .row{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .header-top{
+        padding: 6px 0px;
+        position:fixed;
+        z-index:3;
+        top: 0;
+        left: 0;
+        margin:auto;
+        width: 100%;
+        background: rgba(156, 153, 140, 0.5);
+    }
+    .social-link{
+        padding:0;
+        list-style: none;
+    }
+    .social-link li{
+        display:inline;
+        color:white;
+        padding-left: 8px;
+    }
+    .social-link li :first-child{
+        padding-right: 0;
+    }
+    .social-link li i{
+        font-size: 16px;
+        color:white;
+    }
+    .user-link{
+        color:white;
+        font-size: 16px;
+        line-height: 16px;
+        display: flex;
+    }
+    .user-link a{
+        color:white;
+        font-size: 12px;
+        line-height: 16px;
+        text-decoration: none;
+        display:inline-flex;
+        border-left: 1px solid white;
+        padding-left: 4px;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode';
+    }
+    .user-link a:first-child{
+        padding-right:5px;
+        border:none;
+    }
+    .user-link a i{
+        font-size: 12px;
+        line-height: 16px;
+        padding:0 0 0 4px;
+        display:inline-block;
+    }
+    .nav-menu{
+        list-style: none;
+        display: flex;
+    }
+    .nav-menu ul li{
+        display: inline-block;
+    }   
+    .nav-menu hr{
+        background: white;
+        width:10px;
+        height:8px;
+        transition:width 0.5s ease-in-out;
+        display:block;
+        border:none;
+    }
+    hr:hover{
+        width:30px;
+    }
+    /* .nav-menu li a::before{
+        content:'';
+        display:block;
+        position:absolute;
+        top:0;
+        left:0;
+        width:10px;
+        border-bottom: 4px solid white;
+        transition: width 2s;
+    } */
+    .nav-link{
+        text-decoration: none;
+        color: white;
+        font-size: 15px;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode';
+        padding: 10px 20px;
+        display: inline-block;
+        position:relative;
+    }
+    .nav-link:hover:not(.active) {
+        background-color: rgba(156, 153, 140, 0.5);
+        border-radius: 4px;
+    }
+    .nav-link.active{
+        background: black;
+        color:white;
+        border-radius: 4px;
+    }
+    .search-form {
+        display: flex;
+    }
+    .search-form i{
+        color:black;
+    }
+    /* .container button{
+        background: white;
+        padding: 5px 5px;
+        border: none;
+        cursor: pointer;
+    } */
+    .search-form .button{
+        border-top-right-radius: 4px;
+        border-bottom-right-radius: 4px;
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 0;
+        background: white;
+        padding: 5px 5px;
+        border: none;
+        cursor: pointer;
+    }
+    #search {
+        border: transparent;
+        border-top-left-radius: 4px;
+        border-bottom-left-radius: 4px;
+        font-size: 12px;
+        height: 30px;
+        padding: 8px 8px;
+    }
+
+    /* end of header*/
+
+    .background{
+        overflow:hidden;
+        height:300px;
+        /* display:block; */
+        position:relative;
+    }
+    #bg{
+        z-index: 1;
+        width:100%;
+        position:relative;
+        top:-180px;
+    }
+    /* #bg-logo{
+        position: absolute;
+        top:65px;
+        left:370px;
+        z-index:2;
+        width:300px;
+        height:150px;
+    } */
+    h1{
+        z-index:2;
+        color:white;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode';
+        font-size: 50px;
+        border:4px solid white;
+        padding:15px;
+        background: rgba(156, 153, 140, 0.5);
+    }
+    /* end of background*/
+    .CONTACT{
+        display:flex;
+        padding:40px 20px;
+        background: rgb(63, 62, 58);
+    }
+    legend{
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode';
+        font-size: 15px;
+        color:rgb(214, 145, 65);
+    }
+    form{
+        flex:2;
+    }
+    .form-content{
+        padding:30px 30px 30px 0;
+    }
+    .input-text{
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode';
+        font-size: 14px;
+        border-radius: 4px;
+        border:transparent;
+        height:26px;
+        width:100%;
+    }
+    .input-text:focus, textarea:focus{
+        border-bottom: 2px solid rgb(214, 145, 65);
+    }
+    .form-group{
+        display:flex;
+        justify-content: space-between;
+    }
+    .form-group .form-item{
+        width:49%;
+    }
+    .form-item{
+        margin:0 0 16px;
+    }
+    form button{
+        background:white;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode';
+        border-radius: 4px;
+        border:transparent;
+        cursor:pointer;
+        padding:4px 20px;
+    }
+    form button:hover{
+        background:gray;
+        color:white;
+    }
+    textarea{
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode';
+        font-size: 14px;
+        width:100%;
+        border-radius: 4px;
+        border:transparent;
+    }
+    .address{
+        flex:1;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode';
+        font-size: 13px;
+        color:white;
+    }
+    .address p{
+        padding:5px 0;
+    }
+    .info-title{
+        color:rgb(214, 145, 65);
+    }
+    footer{
+        text-align:center;
+        background: rgb(63, 62, 58);
+    }
+    footer button{
+        border-radius: 40px;
+        padding:16px 30px;
+        border:none;
+        background: black;
+        color:white;
+        font-weight: bold;
+        text-transform:uppercase;
+        font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        display:inline-block;
+        cursor:pointer;
+    }
+    footer button a{
+        text-decoration: none;
+        color:white;
+    }
+    footer p{
+        color:rgba(248, 246, 236, 0.5);
+        padding:16px 0;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    footer div{
+        display:inline-block;
+    }
+    footer div ul{
+        list-style: none;
+        display:flex;
+    }
+    footer div ul li{
+        padding:0px 16px;
+        color:white;
+        border-right:1px solid white;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 14px;
+    }
+    footer div ul li:last-child{
+        border:none;
+    }
